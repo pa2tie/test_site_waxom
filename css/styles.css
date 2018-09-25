@@ -26,13 +26,17 @@ a:hover {
 }
 
 a.btn {
+    font-family: 'Raleway', sans-serif;
     border-radius: 4px;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 800;
+    font-size: 14px;
     text-align: center;
     background-color: #998675;
     opacity: 1;
     transition: background-color 0.5s linear; 
+    padding: 15px 35px;
+    box-shadow: 0 3px 0 #736357;
 }
 
 a.btn:hover {
@@ -46,7 +50,7 @@ a.btn:hover {
     justify-content: space-between;
     align-items: center;
     padding: 35px 18vw 0;
-    animation: 1s fadein 0.5s forwards;
+    animation: 1s fadein 0.2s forwards;
     opacity: 0;
     color: #fff;
     z-index: 1;
@@ -70,6 +74,11 @@ a.btn:hover {
     font-weight: 300;
 }
 
+.page-header__nav a:hover {
+    color: #C7B299;
+    transition: color 0.1s linear;
+}
+
 .page-header .logo {
     text-align: center;
     font-family: 'Raleway', sans-serif;
@@ -82,15 +91,35 @@ a.btn:hover {
     padding-bottom: 10px; 
 }
 
+.cart {
+    margin-left: 40px;
+}
+
+.icon-cart {
+    width: 20px;
+    height: 20px;
+}
+
+.icon-cart:hover {
+    fill: #C7B299;
+    transition: fill 0.1s linear;
+}
+
+.icon-search {
+    width: 20px;
+    height: 20px;
+}
+
+.icon-search:hover {
+    fill: #C7B299;
+    transition: fill 0.1s linear;
+}
+
 section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 18vw;
-}
-
-.page-header .logo-img {
-    fill: #fff;
+    padding: 0 18vw;
 }
 
 .hero {
@@ -102,6 +131,104 @@ section {
     justify-content: center;
     text-align: center;
 }
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide:first-child p {
+    padding: 0 15vw;
+    margin-top: 1rem;
+    padding-bottom: 10vh;
+}
+
+.slide h1 {
+    margin: 0.5rem;
+    font-weight: 800;
+    font-size: 42px;
+}
+
+.slide span {
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.bullets {
+    position: absolute;
+    margin: 0 0;
+    bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+    width: 90px;
+    height: 15px;
+}
+
+.bullets li {
+    width: 10px;
+    height: 10px;
+    background: #8F8E91;
+    border-radius: 50%;
+}
+
+.bullets .active {
+    background: transparent;
+    box-shadow: 0 0 0 2px #CFBDAA;
+}
+
+.bullets li:hover {
+    box-shadow: 0 0 0 2px #8F8E91;
+}
+
+.arrows .previous {
+    position: absolute;
+    height: 100vh;
+    width: 15vw;
+    top: 0;
+    left: 0;
+}
+
+.arrows .previous::before {
+    content: "";
+    position: absolute;
+    opacity: 0.6;
+    left: 50%;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+    transform: rotate(-45deg);
+}
+
+.arrows .next {
+    position: absolute;
+    height: 100vh;
+    width: 15vw;
+    top: 0;
+    right: 0;
+}
+
+.arrows .next::before {
+    content: "";
+    position: absolute;
+    opacity: 0.6;
+    right: 50%;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+    transform: rotate(135deg);
+}
+
+.arrows .next:hover:before, .arrows .previous:hover:before {
+    transition: border-color 0.2s linear;
+    border-color: #C7B299;
+}
+
 
 
 
