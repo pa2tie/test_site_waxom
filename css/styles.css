@@ -2,13 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    line-height: 1.5;
 }
 
 html {
-    font-family: 'Raleway', sans-serif;
     font-family: 'Montserrat', sans-serif;
-    font: normal 16px sans-serif;
-    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    color: #8C8C8C;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 18vw;
 }
 
 ul, nav {
@@ -43,6 +51,8 @@ a.btn:hover {
     background-color: #b39c88;
 }
 
+/* PAGE HEADER */
+
 .page-header {
     position: absolute;
     width: 100%;
@@ -70,7 +80,7 @@ a.btn:hover {
 .page-header__nav ul {
     display: flex;
     justify-content: space-around;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 300;
 }
 
@@ -115,12 +125,7 @@ a.btn:hover {
     transition: fill 0.1s linear;
 }
 
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 18vw;
-}
+/* HERO AND SLIDER */
 
 .hero {
     height: 100vh;
@@ -130,6 +135,7 @@ section {
     position: relative;
     justify-content: center;
     text-align: center;
+    color: white;   
 }
 
 .slider {
@@ -146,12 +152,14 @@ section {
 }
 
 .slide h1 {
+    font-family: 'Raleway', sans-serif;
     margin: 0.5rem;
     font-weight: 800;
-    font-size: 42px;
+    font-size: 46px;
 }
 
 .slide span {
+    font-family: 'Raleway', sans-serif;
     font-size: 34px;
     font-weight: 500;
 }
@@ -229,6 +237,77 @@ section {
     border-color: #C7B299;
 }
 
+/* FEATURES */
 
+.features {
+    height: 40vh;
+    justify-content: center;
+}
+
+.features h2 {
+    font-size: 0;
+}
+
+.features .grid {
+    display: flex;
+    height: 100%;
+}
+
+.features .grid li {
+    height: 100%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.features .grid li::after {
+    content: "";
+    display: inline-block;
+    width: 55px;
+    height: 3px;
+    background-color: #F1EEE9;
+    margin-top: 20px;
+}
+
+.features .grid li:hover::after {
+    background-color: #C7B299;
+    transition: background-color 0.2s linear;
+}
+
+.features .grid li h4 {
+    margin: 10px 0;
+    color: #555;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.features .grid li:hover h4 {
+    color: #C7B299;
+    transition: color 0.2s linear;
+}
+
+.features .grid li p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.features .icon {
+    min-width: 40px;
+    min-height: 40px;
+    width: 40px;
+    height: 40px;
+    fill: #555;
+}
+
+.features li:hover .icon {
+    fill: #C7B299;
+    transition: fill 0.2s linear;
+}
+
+/* ABOUS US */
 
 
