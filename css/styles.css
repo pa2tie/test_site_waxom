@@ -498,6 +498,10 @@ a.btn:hover {
     position: relative;
 }
 
+.portfolio__projects li:hover {
+    background-color: #362F2D;
+}
+
 .portfolio__projects .project-description::after {
     content: "";
     width: 20px;
@@ -509,6 +513,10 @@ a.btn:hover {
     transform: rotate(-56deg) skewY(20deg);
 }
 
+.portfolio__projects li:hover .project-description::after {
+    background-color: #362F2D;
+}
+
 .portfolio__projects .project-description .title {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
@@ -516,9 +524,17 @@ a.btn:hover {
     color: #C7B299;
 }
 
+.portfolio__projects li:hover .project-description .title {
+    color: #fff;
+}
+
 .portfolio__projects .project-description .tags {
     margin-top: 3px;
     font-size: 12px;
+}
+
+.portfolio__projects li:hover .project-description .tags {
+    color: #c7b299;
 }
 
 .portfolio__projects li:nth-child(1) .project-image {
@@ -549,4 +565,85 @@ a.btn:hover {
     margin-top: 20px;
     padding-left: 30px;
     padding-right: 30px;
+}
+
+/* PRESENTATION */
+
+.presentation {
+    height: 70vh;
+    background-size: cover; 
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    color: white; 
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)), url(../img/video_preview.jpg) no-repeat center;
+}
+
+.play-video-btn {
+    width: 75px;
+    height: 75px;
+    border: none;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.icon-play {
+    display: inline-block;
+    fill: #fff;
+    width: 53px;
+    height: 53px;
+    margin: 3px 0 0 0;
+}
+
+.presentation h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.presentation p {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.presentation .video-duration {
+    font-size: 12px;
+    font-weight: 400;
+    color: #c7b299;
+}
+
+
+/* MOBILE FEATURES */
+
+.mobile-features {
+    height: 60vh;
+    background: #FBFAF8;
+    display: flex;
+    flex-direction: row;
+}
+
+.phone {
+    width: 100%;
+    height: 100%;
+    background: url(../img/iphone.png) no-repeat;
+    background-size: cover;
+}
+
+.mobile-features__description {
+    width: 140%;
+}
+
+.mobile-features__description h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.mobile-features__description p {
+    margin-bottom: 20px;
 }
