@@ -473,6 +473,7 @@ a.btn:hover {
     background-color: #FBFAF8;
     position: relative;
     height: calc(72vh / 2 - 10px);
+    width: 30%;
 }
 
 .portfolio__projects li:nth-child(3n+2) {
@@ -486,11 +487,51 @@ a.btn:hover {
 }
 
 .portfolio__projects .project-image {
+    -webkit-filter: brightness(100%);
     background-repeat: no-repeat; 
     background-size: cover;
     width: 100%;
-    height: 100%;
+    height: 70%;
 }
+
+.portfolio__projects li:hover .project-image {
+    -webkit-filter: brightness(40%);
+}
+
+.portfolio__projects li .lupa {
+    display: none;
+    fill: #fff;
+}
+
+.portfolio__projects li:hover .lupa {
+    display: block;
+    position: absolute;
+    top: 90px;
+    left: 52%;
+    z-index: 10;
+}
+
+.portfolio__projects li:hover .icon-lupa:hover {
+    fill: #C7B299;
+}
+
+.portfolio__projects li .chain {
+    display: none;
+    fill: #fff;
+}
+
+.portfolio__projects li:hover .chain {
+    display: block;
+    position: absolute;
+    top: 90px;
+    left: 38%;
+    z-index: 10;
+}
+
+.portfolio__projects li:hover .icon-chain:hover {
+    fill: #C7B299;
+}
+
 
 .portfolio__projects .project-description {
     height: 100px;
